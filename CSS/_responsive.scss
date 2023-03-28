@@ -1,0 +1,87 @@
+@media (max-width: 992px) {
+    .main .espacio {
+      padding: 25px 0px; 
+    }
+    button:focus {
+      outline: none; }
+    .icon-menu {
+      padding: 5px;
+      font-size: 40px;
+      color: #fff; }
+    .barra-menu {
+      background-color: black; }
+    .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone {
+      display: inline-block; }
+    .navbar-brand h1 {
+      color: #fff; }
+    .navbar-nav {
+      border-top: 1px solid #fff; }
+    .navbar-nav .nav-item {
+      display: flex;
+      justify-content: center; }
+    .navbar-nav .nav-item .nav-link {
+      width: 200px;
+      color: #fff; }
+    .fondo-banner .container img {
+      width: 100%;
+      margin-top: 100px; 
+    } 
+    .box-img{
+      text-align: center;
+    }
+    .box-contenido .section-titulo{ 
+      margin-top: 10px;
+      text-align: center;
+    }
+    .section-dos{ 
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+    .img-escritorio{
+      display: none;
+    }
+    .section-dos .img-mobil{
+      display: block;
+    }
+    .box-contenido .boton{
+      width: 100%;
+      padding: 10px;
+      color: white;
+      background-color: black;
+    }
+    .footer .redesSociales{
+      padding: 15px;
+      font-size: 50px;
+      flex-direction: column;
+    }
+    .footer p{
+      display: block;
+    }
+    /* **************************** */
+    /* PAGINA SOBRE MI - RESPONSIVE */
+     /* **************************** */
+  
+     .img-sobremi{
+      margin: 50px 0px 10px 0px;
+     }
+  
+     .box-informacion > h2{
+      text-align: center;
+    }
+    /* *************************** */
+    /* PAGINA GALERIA - RESPONSIVE */
+    /* *************************** */
+    .head-galeria{
+      margin-top: 50px;
+    }
+  
+    .galeria{
+      text-align: center;
+    }
+    /***********************************************/
+    /********** ESTILOS DE PAGINA MUSEO ************/
+    /***********************************************/
+    .head-museo{
+      margin-top: 50px;
+    }
+  }
