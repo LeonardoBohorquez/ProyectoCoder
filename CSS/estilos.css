@@ -1,3 +1,4 @@
+/* Varibles responsive */
 @font-face {
   font-family: "icomoon";
   src: url("fonts/icomoon.eot?t8xdmj");
@@ -160,11 +161,10 @@
   padding: 10px;
   color: #fff;
   border-radius: 2px;
-  background-color: black;
+  background-color: #000;
 }
 
 .box-contenido .boton:hover {
-  color: #fff;
   cursor: pointer;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.7);
@@ -226,7 +226,7 @@
 .btn-card {
   width: 100%;
   color: white !important;
-  background-color: black;
+  background-color: #000;
 }
 
 .btn-card:hover {
@@ -236,7 +236,7 @@
 
 .footer {
   padding: 50px 0px;
-  background-color: black;
+  background-color: #000;
 }
 
 .footer p {
@@ -293,7 +293,7 @@
     color: #fff;
   }
   .barra-menu {
-    background-color: black;
+    background-color: #000;
   }
   .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone {
     display: inline-block;

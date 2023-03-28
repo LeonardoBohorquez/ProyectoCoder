@@ -9,11 +9,11 @@
       font-size: 40px;
       color: #fff; }
     .barra-menu {
-      background-color: black; }
+      background-color: $colorMenuResponsive; }
     .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone {
       display: inline-block; }
     .navbar-brand h1 {
-      color: #fff; }
+      color: $colorH1Responsive }
     .navbar-nav {
       border-top: 1px solid #fff; }
     .navbar-nav .nav-item {
@@ -21,7 +21,7 @@
       justify-content: center; }
     .navbar-nav .nav-item .nav-link {
       width: 200px;
-      color: #fff; }
+      color: $colorLetraMenuResponsive; }
     .fondo-banner .container img {
       width: 100%;
       margin-top: 100px; 
