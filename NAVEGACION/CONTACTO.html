@@ -41,34 +41,34 @@
             </nav>
         </div>
     </header>
-    <main>
-        <h2>CONTACTO</h2>
-        <!-- formulario de envio -->
-        <img src="../IMG/contacto/img-contacto.jpg" alt="" class="img-contacto">
-        <form action="">
-           <div class="grupo-form">
-                <label for="nombre">nombre</label>
-                <input type="text" class="nombre" id="nombre">
-           </div>
-           <div class="grupo-form">
-                <label for="apellido">Apellido</label>
-                <input type="text" id="apellido">
-           </div>
-            <div class="grupo-form">
-                <label for="email" class="email">Correo</label>
-                <input type="email" id="email">
+    <main class="main">
+        <div class="espacio">
+            <div class="container">
+                <div class="head-contacto">
+                    <h2 class="text-center">CONTACTO</h2>
+                    <p class="text-center">¡Gracias por visitar mi sitio web! Si tienes alguna pregunta, comentario o 
+                        sugerencia, por favor no dudes en contactarme utilizando el formulario de contacto a continuación.
+                        Estaré encantado de escuchar tus ideas y responder a tus preguntas. Tu opinión es importante para mí y 
+                        me esforzaré por responder lo antes posible. ¡Espero saber de ti pronto!</p>
+                </div>
+                <div class="centro">
+                    <form action="" class="formulario">
+                        <input type="text" class="nombre" placeholder="Nombre" required>
+                        <input type="text" class="apellido" placeholder="Apellido" required>
+                        <input type="email" class="correo" placeholder="Correo" required>
+                        <input type="number" class="numero" placeholder="Numero de Telefono" required>
+                        <input type="text" class="asunto" placeholder="Asunto" required>
+                        <textarea name="mensaje" class="mensaje" placeholder="Mensaje..." cols="10" rows="5" required></textarea>
+                        <div class="grupo-btn">
+                            <input type="reset" class="borrar" value="Borrar">
+                            <input type="submit" class="enviar" value="Enviar">
+                        </div>
+                    </form>
+                </div>
             </div>
-           <div class="grupo-form">
-                <label for="numero">Numero</label>
-                <input type="number" id="numero" class="numero">
-           </div>
-           <textarea name="textarea" id="" cols="30" rows="5" placeholder="Escriba su mensaje..."></textarea>
-           <div class="grupo-form-boton">
-                <input type="button" value="Borrar">
-                <input type="button" value="Enviar">
-           </div>
-        </form>
+        </div>
     </main>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
@@ -80,7 +80,7 @@
                 <div class="col col-md-6 col-sm-12 col-12">
                     <div class="redesSociales">
                         <a href="https://www.instagram.com/" target="_blank"><span class="icon-instagram"></span></a>
-                        <a href="https://www.youtube.com/" target="_blank"><span class="icon-youtube"></span></a>
+                        <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" class="vibrar"><span class="icon-youtube"></span></a>
                         <a href="https://twitter.com/?lang=es" target="_blank"><span class="icon-twitter"></span></a>
                     </div>
                 </div>

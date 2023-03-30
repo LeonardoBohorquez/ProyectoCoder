@@ -1,6 +1,6 @@
 .footer{
     padding: 50px 0px;
-    background-color: $colorFooter;
+    background-color: $colorFooter; /* Varaiable */
   }
   .footer p {
     margin-bottom: 0;
@@ -12,18 +12,17 @@
     align-items: center;
     justify-content: space-evenly;
   }
-  .footer .redesSociales .icon-instagram,.icon-youtube,.icon-twitter{
-    color: #fff;
-    font-size: 40px;
+  .footer .redesSociales .icon-youtube{
+    @extend .simbolos-redes; /* Aplicando un extend */
+    @include efecto-hover(red, omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
   }
-  .footer .redesSociales .icon-youtube:hover{
-    color: red;
+  .footer .redesSociales .icon-twitter{
+    @extend .simbolos-redes;  /* Aplicando un extend */
+    @include efecto-hover(rgb(0, 204, 255), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
   }
-  .footer .redesSociales .icon-twitter:hover{
-    color: rgb(0, 204, 255);
-  }
-  .footer .redesSociales .icon-instagram:hover{
-    color: rgb(255, 0, 234);
+  .footer .redesSociales .icon-instagram{
+    @extend .simbolos-redes; /* Aplicando un extend */
+    @include efecto-hover(rgb(255, 0, 234), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
   }
   .footer .redesSociales a:hover{
     text-decoration: none;

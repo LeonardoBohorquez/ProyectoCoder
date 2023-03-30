@@ -1,0 +1,9 @@
+@mixin efecto-hover($color,$background,$cursor, $tiempo-animacion){ /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+    &:hover{
+        cursor: $cursor;
+        color: $color;
+        text-decoration: none;
+        background-color: $background;
+        transition: all $tiempo-animacion;
+    }
+}

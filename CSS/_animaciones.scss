@@ -1,0 +1,15 @@
+.vibrar { /* La animacion esta colocado en el simbolo de Youtube en el footer */
+    animation: vibrar 0.5s ease-in-out infinite;
+  }
+  
+  @keyframes vibrar {
+    0% {
+      transform: translateX(-2px);
+    }
+    50% {
+      transform: translateX(2px);
+    }
+    100% {
+      transform: translateX(-2px);
+    }
+  }

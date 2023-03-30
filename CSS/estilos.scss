@@ -1,6 +1,12 @@
+/* Herramientas */
+@import 'reset';
 @import 'variables';
 @import 'icon';
+@import 'animaciones';
+@import 'mixin';
+@import 'extend';
 
+/* Pagina Web */
 @import 'header';
 @import'mainInicio';
 @import 'mainSobremi';
@@ -9,4 +15,5 @@
 @import 'mainMuseo';
 @import 'footer';
 
+/* Cambios para resolucion <= 992px */
 @import 'responsive';

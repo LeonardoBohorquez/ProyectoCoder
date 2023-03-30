@@ -10,9 +10,7 @@
   .btn-card{
     width: 100%;
     color: white !important;
-    background-color: $colorBotones;
+    background-color: $colorBotones; /* Variable */
+    @include efecto-hover(#fff, rgba(0, 0, 0, 0.7), omitido, 0.5s); /* Color de letra, Color de fondo, tipo de cursor */
   }
-  .btn-card:hover{
-    color: white;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+  

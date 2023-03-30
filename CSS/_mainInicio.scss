@@ -54,10 +54,8 @@
     padding: 10px;
     color: #fff;
     border-radius: 2px;
-    background-color: $colorBotones; 
+    background-color: $colorBotones; /* Variable */
+    transition: background-color 0.5s;
+    @include efecto-hover(omitido,rgba(0, 0, 0, 0.7),pointer, 0.5)/* Color de letra, Color de fondo, tipo de cursor */
   }
-  .box-contenido .boton:hover {
-    cursor: pointer;
-    text-decoration: none;
-    background-color: rgba(0, 0, 0, 0.7);
-  }
+                      

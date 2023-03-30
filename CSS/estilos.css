@@ -1,3 +1,11 @@
+/* Herramientas */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Variables Desktop */
 /* Varibles responsive */
 @font-face {
   font-family: "icomoon";
@@ -56,13 +64,35 @@
   content: "\ea9d";
 }
 
+.vibrar { /* La animacion esta colocado en el simbolo de Youtube en el footer */
+  animation: vibrar 0.5s ease-in-out infinite;
+}
+
+@keyframes vibrar {
+  0% {
+    transform: translateX(-2px);
+  }
+  50% {
+    transform: translateX(2px);
+  }
+  100% {
+    transform: translateX(-2px);
+  }
+}
+.simbolos-redes, .footer .redesSociales .icon-instagram, .footer .redesSociales .icon-twitter, .footer .redesSociales .icon-youtube { /* fueron aplicados en las clases de las redes sociales (footer) */
+  color: #fff;
+  font-size: 40px;
+  transition: all 0.5s;
+}
+
+/* Pagina Web */
 .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone, .btn-check {
   display: none;
 }
 
 .barra-menu {
   z-index: 1;
-  background-color: rgba(255, 255, 255, 0.75);
+  background-color: rgba(255, 255, 255, 0.75); /* Variable */
 }
 
 .navbar {
@@ -74,7 +104,7 @@
 }
 
 .navbar-brand h1 {
-  color: #000;
+  color: #000; /* Variable */
   margin: 0 !important;
 }
 
@@ -84,14 +114,18 @@
 
 .navbar-nav .nav-item .nav-link {
   padding: 20px;
-  color: #000;
+  color: #000; /* Variable */
   font-size: 20px;
+  transition: all 0.5s;
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+  /* Color de letra, Color de fondo, tipo de cursor */
 }
-
 .navbar-nav .nav-item .nav-link:hover {
-  color: white;
+  cursor: pointer;
+  color: #fff;
   text-decoration: none;
-  background-color: black;
+  background-color: #000;
+  transition: all 0.5s;
 }
 
 /* Estilos de logo */
@@ -161,13 +195,16 @@
   padding: 10px;
   color: #fff;
   border-radius: 2px;
-  background-color: #000;
+  background-color: #000; /* Variable */
+  transition: background-color 0.5s;
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
 }
-
 .box-contenido .boton:hover {
   cursor: pointer;
+  color: omitido;
   text-decoration: none;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5;
 }
 
 .box-img-sobremi {
@@ -212,6 +249,83 @@
   margin-bottom: 10px;
 }
 
+.centro {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formulario {
+  width: 40%;
+  padding: 20px;
+  margin-top: 50px;
+  box-shadow: 0px 0px 5px 0px;
+}
+
+.nombre, .apellido, .correo, .numero, .asunto, .mensaje {
+  border: 0;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+textarea {
+  resize: none;
+}
+
+.grupo-btn {
+  display: flex;
+  justify-content: space-between;
+}
+
+.enviar, .borrar {
+  border: 0;
+  width: 49%;
+  padding: 10px;
+  cursor: pointer;
+  color: #fff;
+  background-color: #000; /* Variable */
+  transition: background-color 0.5s;
+}
+
+.borrar {
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+}
+.borrar:hover {
+  cursor: omitido;
+  color: omtido;
+  text-decoration: none;
+  background-color: red;
+  transition: all 0.5s;
+}
+
+.enviar {
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+}
+.enviar:hover {
+  cursor: omitido;
+  color: omtido;
+  text-decoration: none;
+  background-color: green;
+  transition: all 0.5s;
+}
+
+.formulario input:focus {
+  box-shadow: 0px 0px 5px 1px;
+  outline: none;
+}
+
+.formulario .mensaje:focus {
+  box-shadow: 0px 0px 5px 1px;
+  outline: none;
+}
+
 .card {
   border: none;
   margin-top: 35px;
@@ -226,17 +340,21 @@
 .btn-card {
   width: 100%;
   color: white !important;
-  background-color: #000;
+  background-color: #000; /* Variable */
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+  /* Color de letra, Color de fondo, tipo de cursor */
 }
-
 .btn-card:hover {
-  color: white;
+  cursor: omitido;
+  color: #fff;
+  text-decoration: none;
   background-color: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s;
 }
 
 .footer {
   padding: 50px 0px;
-  background-color: #000;
+  background-color: #000; /* Varaiable */
 }
 
 .footer p {
@@ -251,21 +369,40 @@
   justify-content: space-evenly;
 }
 
-.footer .redesSociales .icon-instagram, .icon-youtube, .icon-twitter {
-  color: #fff;
-  font-size: 40px;
+.footer .redesSociales .icon-youtube {
+  /* Aplicando un extend */
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
 }
-
 .footer .redesSociales .icon-youtube:hover {
+  cursor: omitir;
   color: red;
+  text-decoration: none;
+  background-color: omitir;
+  transition: all 0.5s;
 }
 
+.footer .redesSociales .icon-twitter {
+  /* Aplicando un extend */
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+}
 .footer .redesSociales .icon-twitter:hover {
+  cursor: omitir;
   color: rgb(0, 204, 255);
+  text-decoration: none;
+  background-color: omitir;
+  transition: all 0.5s;
 }
 
+.footer .redesSociales .icon-instagram {
+  /* Aplicando un extend */
+  /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
+}
 .footer .redesSociales .icon-instagram:hover {
+  cursor: omitir;
   color: rgb(255, 0, 234);
+  text-decoration: none;
+  background-color: omitir;
+  transition: all 0.5s;
 }
 
 .footer .redesSociales a:hover {
@@ -280,6 +417,7 @@
   width: 70%;
 }
 
+/* Cambios para resolucion <= 992px */
 @media (max-width: 992px) {
   .main .espacio {
     padding: 25px 0px;
@@ -370,5 +508,14 @@
   /***********************************************/
   .head-museo {
     margin-top: 50px;
+  }
+  /***********************************************/
+  /********** ESTILOS DE PAGINA CONTACTO **********/
+  /************************************************/
+  .head-contacto {
+    margin-top: 50px;
+  }
+  .formulario {
+    width: 80%;
   }
 }/*# sourceMappingURL=estilos.css.map */

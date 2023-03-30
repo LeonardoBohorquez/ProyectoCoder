@@ -3,7 +3,7 @@
   }
   .barra-menu {
     z-index: 1;
-    background-color: $colorMenu;
+    background-color: $colorMenu; /* Variable */
   }
   .navbar {
     padding: 0; 
@@ -12,7 +12,7 @@
     padding: 0 !important; 
   }
   .navbar-brand h1 {
-    color: $colorH1;
+    color: $colorH1; /* Variable */
     margin: 0 !important; 
   }
   .navbar-nav .nav-item {
@@ -20,11 +20,8 @@
   }
   .navbar-nav .nav-item .nav-link {
     padding: 20px;
-    color: $colorLetraMenu;
+    color: $colorLetraMenu; /* Variable */
     font-size: 20px; 
-  }
-  .navbar-nav .nav-item .nav-link:hover {
-    color: white;
-    text-decoration: none;
-    background-color: black;
+    transition: all 0.5s;
+    @include efecto-hover(#fff, #000, pointer,0.5s); /* Color de letra, Color de fondo, tipo de cursor */
   }
