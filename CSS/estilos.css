@@ -118,7 +118,7 @@
   font-size: 20px;
   transition: all 0.5s;
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
-  /* Color de letra, Color de fondo, tipo de cursor */
+  /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
 }
 .navbar-nav .nav-item .nav-link:hover {
   cursor: pointer;
@@ -342,7 +342,7 @@ textarea {
   color: white; /* Se agrega un color del map */
   background-color: #000; /* Variable */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
-  /* Color de letra, Color de fondo, tipo de cursor */
+  /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
 }
 .btn-card:hover {
   cursor: omitido;

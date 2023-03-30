@@ -11,6 +11,6 @@
     width: 100%;
     color: map-get($color, Blanco); /* Se agrega un color del map */
     background-color: $colorBotones; /* Variable */
-    @include efecto-hover(#fff, rgba(0, 0, 0, 0.7), omitido, 0.5s); /* Color de letra, Color de fondo, tipo de cursor */
+    @include efecto-hover(#fff, rgba(0, 0, 0, 0.7), omitido, 0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
   }
   
