@@ -43,7 +43,7 @@
   }
   .box-contenido .section-titulo {
     padding-bottom: 12px;
-    border-bottom: 1px solid black; 
+    border-bottom: 2px solid map-get($color,Negro); /* Se agrega un color del map */
   }
   .box-contenido .section-parrafo {
     text-align: justify; 

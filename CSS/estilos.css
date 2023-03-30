@@ -182,7 +182,7 @@
 
 .box-contenido .section-titulo {
   padding-bottom: 12px;
-  border-bottom: 1px solid black;
+  border-bottom: 2px solid #000; /* Se agrega un color del map */
 }
 
 .box-contenido .section-parrafo {
@@ -330,16 +330,16 @@ textarea {
   border: none;
   margin-top: 35px;
   box-shadow: 0px 0px 5px 0px;
-  background-color: transparent;
+  background-color: transparent; /* Se agrega un color del map */
 }
 
 .list-group-item {
-  background-color: transparent;
+  background-color: transparent; /* Se agrega un color del map */
 }
 
 .btn-card {
   width: 100%;
-  color: white !important;
+  color: white; /* Se agrega un color del map */
   background-color: #000; /* Variable */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
   /* Color de letra, Color de fondo, tipo de cursor */
