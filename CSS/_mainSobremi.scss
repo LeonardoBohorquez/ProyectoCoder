@@ -2,26 +2,30 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    .img-sobremi{
+     width: 75%;
+     border-radius: 100%;
+     box-shadow: 0px 0px 50px 0px;
+   }
   }
-  .box-img-sobremi .img-sobremi{
-    width: 76%;
-    border-radius: 100%;
-    box-shadow: 0px 0px 50px 0px;
-  }
-  .box-informacion > h2{
-    margin-bottom: 20px;
-    padding-bottom: 10px;
-  }
-  .box-informacion .lista li{
-    list-style:none;
-  }
-  .box-informacion .lista li p{
-    font-size: 18px;
-    text-align: justify;
-  }
-  .negrita{
-    font-weight: bold;
-  }
-  .firma img{
-    width: 200px;
-  }
+  .box-informacion{
+    h2{
+      margin-bottom: 20px;
+      padding-bottom: 10px;
+    }
+    .lista{
+      li{
+        list-style:none;
+        p{
+           font-size: 18px;
+           text-align: justify;
+           .negrita{
+             font-weight: bold;
+           }
+         }
+      }
+    } 
+    .firma img{
+      width: 200px;
+    }
+  } 

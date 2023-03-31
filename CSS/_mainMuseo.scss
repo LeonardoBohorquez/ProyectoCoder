@@ -3,14 +3,14 @@
     margin-top: 35px;
     box-shadow: 0px 0px 5px 0px;
     background-color:map-get($color, Transparente); /* Se agrega un color del map */
-  }
-  .list-group-item{
-    background-color: map-get($color, Transparente); /* Se agrega un color del map */
-  }
-  .btn-card{
-    width: 100%;
-    color: map-get($color, Blanco); /* Se agrega un color del map */
-    background-color: $colorBotones; /* Variable */
-    @include efecto-hover(#fff, rgba(0, 0, 0, 0.7), omitido, 0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+    .list-group-item{
+      background-color: map-get($color, Transparente); /* Se agrega un color del map */
+    }
+    .btn-card{
+      width: 100%;
+      color: map-get($color, Blanco); /* Se agrega un color del map */
+      background-color: $colorBotones; /* Variable */
+      @include efecto-hover(#fff, rgba(0, 0, 0, 0.7), omitido, 0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+    }
   }
   

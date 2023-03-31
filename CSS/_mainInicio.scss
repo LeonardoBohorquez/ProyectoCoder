@@ -1,33 +1,30 @@
-/* Estilos de logo */
-.fondo-banner {
-    background-image: url(../IMG/INICIO/banner.jpg);
-    background-size: cover;
-    background-position-y: 190%;
-    background-repeat: no-repeat;
-    background-attachment: fixed; 
-  }
-  .fondo-banner .container {
-    text-align: center; 
-  }
-  .fondo-banner .container img {
-    margin-top: 100px; 
-  }
   /* Estilos del main */
   .main {
     background-image: url(../IMG/INICIO/MAIN/fondo-main.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed; 
-  }
-  .main .espacio {
-    padding: 100px 0px; 
-  }
-  .section-dos{
-    margin-top: 100px;
-    margin-bottom: 100px;
-  }
-  .section-dos .img-mobil{
-    display: none;
+    background-attachment: fixed;
+    .fondo-banner {/* Estilos de logo */
+      background-image: url(../IMG/INICIO/banner.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      .container {
+        text-align: center; 
+        img {
+          margin-top: 100px; 
+        }
+      }
+    } 
+    .espacio {
+       padding: 100px 0px; 
+     }
+     .section-dos{
+       margin-top: 100px;
+       margin-bottom: 100px;
+       .img-mobil{
+         display: none;
+       }
+     }
   }
   .img-section{
     width: 500px;
@@ -40,15 +37,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center; 
-  }
-  .box-contenido .section-titulo {
-    padding-bottom: 12px;
-    border-bottom: 2px solid map-get($color,Negro); /* Se agrega un color del map */
-  }
-  .box-contenido .section-parrafo {
+    .section-titulo {
+      padding-bottom: 12px;
+      border-bottom: 2px solid map-get($color,Negro); /* Se agrega un color del map */
+    }
+    .section-parrafo {
     text-align: justify; 
-  }
-  .box-contenido .boton {
+    }
+    .boton {
     border: none;
     width: 100px;
     padding: 10px;
@@ -57,5 +53,6 @@
     background-color: $colorBotones; /* Variable */
     transition: background-color 0.5s;
     @include efecto-hover(omitido,rgba(0, 0, 0, 0.7),pointer, 0.5)/* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+    }
   }
                       

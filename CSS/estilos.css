@@ -86,7 +86,7 @@
 }
 
 /* Pagina Web */
-.icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone, .btn-check {
+.icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone, .btn-check, .responsive-enviar {
   display: none;
 }
 
@@ -94,16 +94,13 @@
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.75); /* Variable */
 }
-
-.navbar {
+.barra-menu .navbar {
   padding: 0;
 }
-
-.navbar-brand {
+.barra-menu .navbar-brand {
   padding: 0 !important;
 }
-
-.navbar-brand h1 {
+.barra-menu .navbar-brand h1 {
   color: #000; /* Variable */
   margin: 0 !important;
 }
@@ -111,7 +108,6 @@
 .navbar-nav .nav-item {
   padding: 0 !important;
 }
-
 .navbar-nav .nav-item .nav-link {
   padding: 20px;
   color: #000; /* Variable */
@@ -128,23 +124,6 @@
   transition: all 0.5s;
 }
 
-/* Estilos de logo */
-.fondo-banner {
-  background-image: url(../IMG/INICIO/banner.jpg);
-  background-size: cover;
-  background-position-y: 190%;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-}
-
-.fondo-banner .container {
-  text-align: center;
-}
-
-.fondo-banner .container img {
-  margin-top: 100px;
-}
-
 /* Estilos del main */
 .main {
   background-image: url(../IMG/INICIO/MAIN/fondo-main.jpg);
@@ -152,17 +131,25 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-
+.main .fondo-banner { /* Estilos de logo */
+  background-image: url(../IMG/INICIO/banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.main .fondo-banner .container {
+  text-align: center;
+}
+.main .fondo-banner .container img {
+  margin-top: 100px;
+}
 .main .espacio {
   padding: 100px 0px;
 }
-
-.section-dos {
+.main .section-dos {
   margin-top: 100px;
   margin-bottom: 100px;
 }
-
-.section-dos .img-mobil {
+.main .section-dos .img-mobil {
   display: none;
 }
 
@@ -179,16 +166,13 @@
   flex-direction: column;
   justify-content: center;
 }
-
 .box-contenido .section-titulo {
   padding-bottom: 12px;
   border-bottom: 2px solid #000; /* Se agrega un color del map */
 }
-
 .box-contenido .section-parrafo {
   text-align: justify;
 }
-
 .box-contenido .boton {
   border: none;
   width: 100px;
@@ -212,32 +196,27 @@
   justify-content: center;
   align-items: center;
 }
-
 .box-img-sobremi .img-sobremi {
-  width: 76%;
+  width: 75%;
   border-radius: 100%;
   box-shadow: 0px 0px 50px 0px;
 }
 
-.box-informacion > h2 {
+.box-informacion h2 {
   margin-bottom: 20px;
   padding-bottom: 10px;
 }
-
 .box-informacion .lista li {
   list-style: none;
 }
-
 .box-informacion .lista li p {
   font-size: 18px;
   text-align: justify;
 }
-
-.negrita {
+.box-informacion .lista li p .negrita {
   font-weight: bold;
 }
-
-.firma img {
+.box-informacion .firma img {
   width: 200px;
 }
 
@@ -254,37 +233,31 @@
   justify-content: center;
   align-items: center;
 }
-
-.formulario {
+.centro .formulario {
   width: 40%;
   padding: 20px;
   margin-top: 50px;
   box-shadow: 0px 0px 5px 0px;
 }
-
-.nombre, .apellido, .correo, .numero, .asunto, .mensaje {
+.centro .formulario .nombre, .centro .formulario .apellido, .centro .formulario .correo, .centro .formulario .numero, .centro .formulario .asunto, .centro .formulario .mensaje {
   border: 0;
   width: 100%;
   padding: 10px;
   margin-bottom: 10px;
 }
-
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
+.centro .formulario input[type=number]::-webkit-inner-spin-button,
+.centro .formulario input[type=number]::-webkit-outer-spin-button {
   -webkit-appearance: none;
   margin: 0;
 }
-
-textarea {
+.centro .formulario textarea {
   resize: none;
 }
-
-.grupo-btn {
+.centro .formulario .grupo-btn {
   display: flex;
   justify-content: space-between;
 }
-
-.enviar, .borrar {
+.centro .formulario .grupo-btn .enviar, .centro .formulario .grupo-btn .borrar, .centro .formulario .grupo-btn .responsive-enviar {
   border: 0;
   width: 49%;
   padding: 10px;
@@ -293,35 +266,31 @@ textarea {
   background-color: #000; /* Variable */
   transition: background-color 0.5s;
 }
-
-.borrar {
+.centro .formulario .grupo-btn .borrar {
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
 }
-.borrar:hover {
+.centro .formulario .grupo-btn .borrar:hover {
   cursor: omitido;
   color: omtido;
   text-decoration: none;
   background-color: red;
   transition: all 0.5s;
 }
-
-.enviar {
+.centro .formulario .grupo-btn .enviar, .centro .formulario .grupo-btn .responsive-enviar {
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
 }
-.enviar:hover {
+.centro .formulario .grupo-btn .enviar:hover, .centro .formulario .grupo-btn .responsive-enviar:hover {
   cursor: omitido;
   color: omtido;
   text-decoration: none;
   background-color: green;
   transition: all 0.5s;
 }
-
-.formulario input:focus {
+.centro input:focus {
   box-shadow: 0px 0px 5px 1px;
   outline: none;
 }
-
-.formulario .mensaje:focus {
+.centro .formulario .mensaje:focus {
   box-shadow: 0px 0px 5px 1px;
   outline: none;
 }
@@ -332,19 +301,17 @@ textarea {
   box-shadow: 0px 0px 5px 0px;
   background-color: transparent; /* Se agrega un color del map */
 }
-
-.list-group-item {
+.card .list-group-item {
   background-color: transparent; /* Se agrega un color del map */
 }
-
-.btn-card {
+.card .btn-card {
   width: 100%;
   color: white; /* Se agrega un color del map */
   background-color: #000; /* Variable */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
   /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
 }
-.btn-card:hover {
+.card .btn-card:hover {
   cursor: omitido;
   color: #fff;
   text-decoration: none;
@@ -356,19 +323,21 @@ textarea {
   padding: 50px 0px;
   background-color: #000; /* Varaiable */
 }
-
-.footer p {
-  margin-bottom: 0;
-  color: #fff;
+.footer .container-img {
+  text-align: center;
 }
-
+.footer .img-footer {
+  width: 70%;
+}
 .footer .redesSociales {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
 }
-
+.footer .redesSociales a:hover {
+  text-decoration: none;
+}
 .footer .redesSociales .icon-youtube {
   /* Aplicando un extend */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
@@ -380,7 +349,6 @@ textarea {
   background-color: omitir;
   transition: all 0.5s;
 }
-
 .footer .redesSociales .icon-twitter {
   /* Aplicando un extend */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
@@ -392,7 +360,6 @@ textarea {
   background-color: omitir;
   transition: all 0.5s;
 }
-
 .footer .redesSociales .icon-instagram {
   /* Aplicando un extend */
   /* Los mixin estan agregado en la mayoria de los botones de la pagina web */
@@ -404,26 +371,19 @@ textarea {
   background-color: omitir;
   transition: all 0.5s;
 }
-
-.footer .redesSociales a:hover {
-  text-decoration: none;
-}
-
-.footer .container-img {
-  text-align: center;
-}
-
-.footer .img-footer {
-  width: 70%;
+.footer p {
+  margin-bottom: 0;
+  color: #fff;
 }
 
 /* Cambios para resolucion <= 992px */
 @media (max-width: 992px) {
   .fondo-banner {
-    background-attachment: local;
+    background-image: none !important;
   }
   .main {
     background-image: none;
+    background-color: rgb(240, 240, 240);
   }
   .main .espacio {
     padding: 25px 0px;
@@ -439,11 +399,11 @@ textarea {
   .barra-menu {
     background-color: #000;
   }
-  .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone {
+  .icon-menu, .icon-home, .icon-user, .icon-image, .icon-camera, .icon-phone, .responsive-enviar {
     display: inline-block;
   }
   .navbar-brand h1 {
-    color: #fff;
+    color: #fff !important;
   }
   .navbar-nav {
     border-top: 1px solid #fff;
@@ -468,14 +428,14 @@ textarea {
     text-align: center;
   }
   .section-dos {
-    margin-top: 25px;
-    margin-bottom: 25px;
+    margin-top: 25px !important;
+    margin-bottom: 25px !important;
   }
-  .img-escritorio {
+  .img-escritorio, .enviar {
     display: none;
   }
   .section-dos .img-mobil {
-    display: block;
+    display: block !important;
   }
   .box-contenido .boton {
     width: 100%;
@@ -522,9 +482,17 @@ textarea {
     margin-top: 50px;
   }
   .formulario {
-    width: 80%;
+    width: 100% !important;
   }
   .nombre, .apellido, .correo, .numero, .asunto, .mensaje, .formulario {
     box-shadow: 0px 0px 0px 1px;
+  }
+  .grupo-btn {
+    width: 100%;
+    flex-direction: column;
+  }
+  .grupo-btn .enviar, .borrar, .responsive-enviar {
+    width: 100% !important;
+    margin-bottom: 10px;
   }
 }/*# sourceMappingURL=estilos.css.map */

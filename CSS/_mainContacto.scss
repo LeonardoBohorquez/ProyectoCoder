@@ -3,56 +3,54 @@
     display: flex;
     justify-content: center;
     align-items: center;
-}
-.formulario{
-    width: 40%;
-    padding: 20px;
-    margin-top: 50px;
-    box-shadow: 0px 0px 5px 0px;
-    
-}
-.nombre, .apellido, .correo, .numero, .asunto, .mensaje{
-    border: 0;
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-input[type=number]::-webkit-inner-spin-button,
-input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-textarea{
-    resize: none;
-}
-.grupo-btn{
-    display: flex;
-    justify-content:space-between;
-}
-.enviar, .borrar{
-    border: 0;
-    width: 49%;
-    padding: 10px;
-    cursor: pointer;
-    color: #fff;
-    background-color: $colorBotones; /* Variable */
-    transition: background-color 0.5s;
+    .formulario{
+        width: 40%;
+        padding: 20px;
+        margin-top: 50px;
+        box-shadow: 0px 0px 5px 0px;
+        .nombre, .apellido, .correo, .numero, .asunto, .mensaje{
+            border: 0;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        } 
+        input[type=number]::-webkit-inner-spin-button,
+        input[type=number]::-webkit-outer-spin-button {
+            -webkit-appearance: none;
+            margin: 0;
+        }
+        textarea{
+            resize: none;
+        }
+        .grupo-btn{
+            display: flex;
+            justify-content:space-between;
+            .enviar, .borrar, .responsive-enviar{
+                border: 0;
+                width: 49%;
+                padding: 10px;
+                cursor: pointer;
+                color: #fff;
+                background-color: $colorBotones; /* Variable */
+                transition: background-color 0.5s;
+            }
+            .borrar{
+               @include efecto-hover(omtido, red, omitido, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
+            }
+            .enviar, .responsive-enviar{
+                @include efecto-hover(omtido, green, omitido, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
+            }
+        }
+    }
+    input:focus{
+        box-shadow: 0px 0px 5px 1px;
+        outline: none;
+    }
+    .formulario .mensaje:focus{
+        box-shadow: 0px 0px 5px 1px;
+        outline: none;
+    }
 }
 
-.borrar{
-   @include efecto-hover(omtido, red, omitido, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
-}
 
-.enviar{
-    @include efecto-hover(omtido, green, omitido, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
-}
-
-.formulario input:focus{
-    box-shadow: 0px 0px 5px 1px;
-    outline: none;
-}
-.formulario .mensaje:focus{
-    box-shadow: 0px 0px 5px 1px;
-    outline: none;
-}
 

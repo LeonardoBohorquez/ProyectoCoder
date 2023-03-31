@@ -1,27 +1,29 @@
-.icon-menu, .icon-home, .icon-user,.icon-image, .icon-camera, .icon-phone, .btn-check{
-    display: none;
-  }
-  .barra-menu {
-    z-index: 1;
-    background-color: $colorMenu; /* Variable */
-  }
+.icon-menu, .icon-home, .icon-user,.icon-image, .icon-camera, .icon-phone, .btn-check, .responsive-enviar{
+  display: none;
+}
+.barra-menu {
+  z-index: 1;
+  background-color: $colorMenu; /* Variable */
   .navbar {
     padding: 0; 
   }
   .navbar-brand {
     padding: 0 !important; 
+    h1 {
+      color: $colorH1; /* Variable */
+      margin: 0 !important; 
+    }
   }
-  .navbar-brand h1 {
-    color: $colorH1; /* Variable */
-    margin: 0 !important; 
-  }
-  .navbar-nav .nav-item {
+}
+.navbar-nav{
+  .nav-item {
     padding: 0 !important; 
+    .nav-link {
+      padding: 20px;
+      color: $colorLetraMenu; /* Variable */
+      font-size: 20px; 
+      transition: all 0.5s;
+      @include efecto-hover(#fff, #000, pointer,0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+    }
   }
-  .navbar-nav .nav-item .nav-link {
-    padding: 20px;
-    color: $colorLetraMenu; /* Variable */
-    font-size: 20px; 
-    transition: all 0.5s;
-    @include efecto-hover(#fff, #000, pointer,0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
-  }
+} 

@@ -1,35 +1,35 @@
 .footer{
     padding: 50px 0px;
     background-color: $colorFooter; /* Varaiable */
-  }
-  .footer p {
-    margin-bottom: 0;
-    color: #fff;
-  }
-  .footer .redesSociales{
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-  }
-  .footer .redesSociales .icon-youtube{
-    @extend .simbolos-redes; /* Aplicando un extend */
-    @include efecto-hover(red, omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
-  }
-  .footer .redesSociales .icon-twitter{
-    @extend .simbolos-redes;  /* Aplicando un extend */
-    @include efecto-hover(rgb(0, 204, 255), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
-  }
-  .footer .redesSociales .icon-instagram{
-    @extend .simbolos-redes; /* Aplicando un extend */
-    @include efecto-hover(rgb(255, 0, 234), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
-  }
-  .footer .redesSociales a:hover{
-    text-decoration: none;
-  }
-  .footer .container-img{
-    text-align: center;
-  }
-  .footer .img-footer{
-    width: 70%;
+    .container-img{
+      text-align: center;
+    }
+    .img-footer{
+      width: 70%;
+    }
+    .redesSociales{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        a:hover{
+          text-decoration: none;
+        }
+        .icon-youtube{
+          @extend .simbolos-redes; /* Aplicando un extend */
+          @include efecto-hover(red, omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
+          }
+        .icon-twitter{
+          @extend .simbolos-redes;  /* Aplicando un extend */
+          @include efecto-hover(rgb(0, 204, 255), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
+          }
+        .icon-instagram{
+          @extend .simbolos-redes; /* Aplicando un extend */
+          @include efecto-hover(rgb(255, 0, 234), omitir, omitir, 0.5s)/* Color de letra, Color de fondo, tipo de cursor */
+        }
+      }
+      p {
+        margin-bottom: 0;
+        color: #fff;
+      }
   }
