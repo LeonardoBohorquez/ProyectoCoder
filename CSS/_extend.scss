@@ -3,3 +3,13 @@
     font-size: 40px;
     transition: all 0.5s;
   }
+.boton {
+    border: none;
+    width: 100px;
+    padding: 10px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: $colorBotones; /* Variable */
+    transition: background-color 0.5s;
+    @include efecto-hover(omitido,rgba(0, 0, 0, 0.7),pointer, 0.5)/* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+  }
