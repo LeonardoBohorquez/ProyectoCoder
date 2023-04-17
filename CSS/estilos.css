@@ -65,7 +65,7 @@
   content: "\ea9d";
 }
 
-.vibrar { /* La animacion esta colocado en el simbolo de Youtube en el footer */
+.vibrar {
   animation: vibrar 0.4s ease-in-out infinite;
 }
 
@@ -80,7 +80,6 @@
     transform: translateX(-2px);
   }
 }
-/* ANIMACION PARA GALERIA */
 .img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar {
   position: relative;
   animation: izquierda 3s;
@@ -151,6 +150,21 @@
     opacity: 0;
   }
   100% {
+    opacity: 1;
+  }
+}
+.img-flork {
+  position: relative;
+  animation: flork 5s;
+}
+
+@keyframes flork {
+  0% {
+    left: -300px;
+    opacity: 0;
+  }
+  100% {
+    left: 0px;
     opacity: 1;
   }
 }

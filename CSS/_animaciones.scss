@@ -1,4 +1,4 @@
-.vibrar { /* La animacion esta colocado en el simbolo de Youtube en el footer */
+.vibrar { 
     animation: vibrar 0.4s ease-in-out infinite;
   }
   
@@ -16,8 +16,6 @@
       
     }
   }
-
-  /* ANIMACION PARA GALERIA */
   .img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar{
     position: relative;
     animation: izquierda 3s;
@@ -33,7 +31,6 @@
       left: 0px;
     }
   }
-
   .img-dos, .img-tres, .titulo-galeria, .parrafo-galeria, .firma, .titulo-museo, .parrafo-museo{
     position: relative;
     animation: caida 3s;
@@ -49,12 +46,10 @@
       top: 0px;
     }
   }
-
   .img-seis, .img-siete, .parrafo{
     position: relative;
     animation: subida 3s;
   }
-
   @keyframes subida{
     0%{
       opacity: 0;
@@ -65,13 +60,10 @@
       bottom: 0px;
     }
   }
-
-  
   .img-cuatro, .img-ocho, .nombre-sobremi, .fecha, .apellido, .numero, .mensaje, .enviar{
     position: relative;
     animation: derecha 3s;
   }
-
   @keyframes derecha{
     0%{
       opacity: 0;
@@ -82,17 +74,31 @@
       right: 0px;
     }
   }
-
   .img-sobremi, .card, .formulario{
     position: relative;
     animation: opacidad 3s;
   }
-
   @keyframes opacidad {
     0%{
       opacity: 0;
     }
     100%{
+      opacity: 1;
+    }
+  }
+
+  .img-flork{
+    position: relative;
+    animation: flork 5s;
+  }
+
+  @keyframes flork{
+    0%{
+      left: -300px;
+      opacity: 0;
+    }
+    100%{
+      left: 0px;
       opacity: 1;
     }
   }
