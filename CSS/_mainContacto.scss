@@ -12,10 +12,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     .formulario{
         width: 40%;
         padding: 20px;
-        margin-top: 50px;
         box-shadow: 0px 0px 5px 0px;
         .nombre, .apellido, .correo, .numero, .asunto, .mensaje{
             border: 0;
@@ -59,6 +59,10 @@
         box-shadow: 0px 0px 5px 1px;
         outline: none;
     }
+}
+
+.flork-meme{
+    width: 100px;
 }
 
 

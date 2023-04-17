@@ -23,7 +23,7 @@
       color: $colorLetraMenu; /* Variable */
       font-size: 20px; 
       transition: all 0.5s;
-      @include efecto-hover(#fff, #000, pointer,0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+      @include efecto-hover(#000,  rgb(240, 240, 240), pointer,0.5s); /* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
     }
   }
 } 

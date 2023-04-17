@@ -2,10 +2,6 @@
     .fondo-banner {
       background-image: none !important;
     }
-    .main {
-      background-image: none;
-      background-color: rgb(240, 240, 240);
-    }
     .main .espacio {
       padding: 25px 0px; 
     }
@@ -99,11 +95,18 @@
       width: 100% !important;
     }
     .nombre, .apellido, .correo, .numero, .asunto, .mensaje,.formulario{
-      box-shadow: 0px 0px 0px 1px;
+      box-shadow: 0px 0px 0px 1px gray;
     }
     .grupo-btn{
       width: 100%;
       flex-direction: column;
+    }
+
+    .responsive-enviar{
+      background-color: rgb(1, 88, 1) !important;
+    }
+    .borrar{
+      background-color: rgb(194, 0, 0) !important;
     }
 
     .grupo-btn .enviar, .borrar, .responsive-enviar{

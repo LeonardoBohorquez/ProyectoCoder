@@ -1,11 +1,9 @@
   /* Estilos del main */
   .main {
-    background-image: url(../IMG/INICIO/MAIN/fondo-main.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-color: rgb(240, 240, 240);
+  
     .fondo-banner {/* Estilos de logo */
-      background-image: url(../IMG/INICIO/banner.jpg);
+      background-image: url(../assets/img/inicio/banner.jpg);
       background-size: cover;
       background-repeat: no-repeat;
       .container {
@@ -19,8 +17,11 @@
        padding: 100px 0px; 
      }
      .section-dos{
-       margin-top: 100px;
-       margin-bottom: 100px;
+       padding-top: 50px;
+       margin-top: 50px;
+       padding-bottom: 50px;
+       margin-bottom: 50px;
+       background-color: #fff;
        .img-mobil{
          display: none;
        }
@@ -29,8 +30,7 @@
   .img-section{
     width: 500px;
     height: 350px;
-    border-radius: 5px;
-    box-shadow: 0px 0px 25px 0px;
+    box-shadow: 0px 0px 10px 0px gray;
   }
   .box-contenido {
     height: 100%;
@@ -43,17 +43,17 @@
     }
     .section-parrafo {
       font-size: 18px;
-    text-align: justify; 
+      text-align: justify; 
     }
     .boton {
-    border: none;
-    width: 100px;
-    padding: 10px;
-    color: #fff;
-    border-radius: 2px;
-    background-color: $colorBotones; /* Variable */
-    transition: background-color 0.5s;
-    @include efecto-hover(omitido,rgba(0, 0, 0, 0.7),pointer, 0.5)/* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
+      border: none;
+      width: 110px;
+      padding: 10px;
+      color: #fff;
+      border-radius: 2px;
+      background-color: $colorBotones; /* Variable */
+      transition: background-color 0.5s;
+      @include efecto-hover(omitido,rgba(0, 0, 0, 0.7),pointer, 0.5)/* Color de letra, Color de fondo, tipo de cursor,  tiempo de transision */
     }
   }
                       
