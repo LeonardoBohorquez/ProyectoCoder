@@ -25,12 +25,18 @@
     .navbar-nav .nav-item .nav-link {
       width: 200px;
       color: $colorLetraMenuResponsive; }
-    .fondo-banner .container img {
-      width: 100%;
-      margin-top: 100px; 
-    } 
-    .box-img{
-      text-align: center;
+
+    .fondo-banner{
+      background-color: #fff;
+      padding-top: 100px !important;
+      padding-bottom: 25px !important;
+    }
+    .bienvenido{
+      text-align: center !important;
+      font-size: 45px !important;
+    }
+    .intro{
+      text-align: justify !important;
     }
     .box-contenido .section-titulo{ 
       margin-top: 10px;

@@ -16,7 +16,7 @@
       
     }
   }
-  .img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar{
+  .img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar, .bienvenido{
     position: relative;
     animation: izquierda 3s;
   }
@@ -60,7 +60,7 @@
       bottom: 0px;
     }
   }
-  .img-cuatro, .img-ocho, .nombre-sobremi, .fecha, .apellido, .numero, .mensaje, .enviar{
+  .img-cuatro, .img-ocho, .nombre-sobremi, .fecha, .apellido, .numero, .mensaje, .enviar, .intro{
     position: relative;
     animation: derecha 3s;
   }

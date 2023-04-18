@@ -80,7 +80,7 @@
     transform: translateX(-2px);
   }
 }
-.img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar {
+.img-uno, .img-cinco, .titulo-sobremi, .edad, .profesion, .titulo-contacto, .parrafo-contacto, .nombre, .correo, .asunto, .borrar, .bienvenido {
   position: relative;
   animation: izquierda 3s;
 }
@@ -125,7 +125,7 @@
     bottom: 0px;
   }
 }
-.img-cuatro, .img-ocho, .nombre-sobremi, .fecha, .apellido, .numero, .mensaje, .enviar {
+.img-cuatro, .img-ocho, .nombre-sobremi, .fecha, .apellido, .numero, .mensaje, .enviar, .intro {
   position: relative;
   animation: derecha 3s;
 }
@@ -235,16 +235,22 @@
 .main {
   background-color: rgb(240, 240, 240);
 }
-.main .fondo-banner { /* Estilos de logo */
+.main .fondo-banner { /* Estilos de Bienvenida */
+  padding: 150px 0px;
   background-image: url(../assets/img/inicio/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
 }
-.main .fondo-banner .container {
-  text-align: center;
+.main .fondo-banner .logo .bienvenido {
+  font-size: 95px;
 }
-.main .fondo-banner .container img {
-  margin-top: 100px;
+.main .fondo-banner .logo .intro {
+  font-size: 20px;
+  margin: 0;
+}
+.main .fondo-banner .logo .flork-artista {
+  border-radius: 100%;
+  width: 300px;
 }
 .main .espacio {
   padding: 100px 0px;
@@ -561,12 +567,17 @@
     width: 200px;
     color: #fff;
   }
-  .fondo-banner .container img {
-    width: 100%;
-    margin-top: 100px;
+  .fondo-banner {
+    background-color: #fff;
+    padding-top: 100px !important;
+    padding-bottom: 25px !important;
   }
-  .box-img {
-    text-align: center;
+  .bienvenido {
+    text-align: center !important;
+    font-size: 45px !important;
+  }
+  .intro {
+    text-align: justify !important;
   }
   .box-contenido .section-titulo {
     margin-top: 10px;

@@ -2,14 +2,23 @@
   .main {
     background-color: rgb(240, 240, 240);
   
-    .fondo-banner {/* Estilos de logo */
+    .fondo-banner {/* Estilos de Bienvenida */
+      padding: 150px 0px;
       background-image: url(../assets/img/inicio/banner.jpg);
       background-size: cover;
       background-repeat: no-repeat;
-      .container {
-        text-align: center; 
-        img {
-          margin-top: 100px; 
+      .logo {
+
+        .bienvenido{  
+          font-size: 95px;
+        }
+        .intro{
+          font-size: 20px;
+          margin: 0;
+        }
+        .flork-artista{
+          border-radius: 100%;
+          width: 300px;
         }
       }
     } 
